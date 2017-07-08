@@ -88,7 +88,13 @@ console.log(isGreaterThan(3,2));
  * Console.log your result.
 */
 
+function mustBeTrue(boo){
+	if(boo === "true"){
+		return true;
+	}
+}
 
+console.log(mustBeTrue("true"))
 
 /*
  * #5
@@ -102,6 +108,13 @@ console.log(isGreaterThan(3,2));
  * Console.log your result.
 */
 
+function bigBird(word){
+	if(word.length === 3){
+		return "Word to Big Bird";
+	}
+}
+
+console.log(bigBird("too"));
 
 
 /*
@@ -117,6 +130,15 @@ console.log(isGreaterThan(3,2));
  * Console.log your result.
 */
 
+function isEqual(first, second){
+	if(first === second){
+		return "You look mahvelous";
+	}else{
+		return "I don't know who you are anymore."
+	}
+}
+
+console.log(isEqual("cow", "not"));
 
 /*
  * #7
