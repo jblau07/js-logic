@@ -196,6 +196,15 @@ console.log(spareChange(90));
  * Console.log your result.
 */ 
 
+function dirty30(one, two, three){
+	if((one, two, three) >30){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+console.log(dirty30(12, 3, 9));
 
 
 /*
@@ -210,6 +219,15 @@ console.log(spareChange(90));
  * Console.log your result.
 */ 
 
+function evenStevens(num){
+	if(num % 2 == 0){
+	return true;
+}else{
+	return false;
+}
+}
+
+console.log(evenStevens(1));
 
 
 
@@ -226,7 +244,15 @@ console.log(spareChange(90));
  * Console.log your result.
 */ 
 
+function daClub(cover, age){
+	if(cover >= 21 && age >=21){
+		return "Welcome to the Legends Lounge.";
+	}else{
+		return "Chuck E Cheese is across the street";
+	}
+}
 
+console.log(daClub(21, 23));
 /*
  * #12
  * Function - graduation
