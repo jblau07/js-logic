@@ -386,8 +386,18 @@ for(var i =0; i<myFavFoods.length; i ++)
  * The function will loop through and add up all the values in the array that is passed into the function and return the total.
  * Console.log your result.
 */
+ var numArray = [53, 22, 25, 2, 9];
+ var total = 0;
 
+ function sumItUp(arr){
 
+ 	for(var i = 0; i<arr.length; i++){
+ 		console.log(arr[i]);
+ 		total += arr[i];
+ 	}
+ 	return total;
+ }
+console.log(sumItUp(numArray));
 
 /*
  * #18
@@ -402,6 +412,26 @@ for(var i =0; i<myFavFoods.length; i ++)
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+
+var east = [];
+var west = [];
+
+function allStars(ballers){
+	for (var i =0; i<ballers.length; i++){
+		console.log(ballers[i]);
+		if(i % 2 == 0){
+			east.push(ballers[i]);
+		}else{
+			west.push(ballers[i]);
+		}
+	}
+}
+allStars(players);
+console.log(east);
+console.log(west);
+
+
+
 /*
  * #19
  * Function - subways
