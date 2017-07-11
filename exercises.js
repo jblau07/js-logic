@@ -29,16 +29,17 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
 function canVote(age){
-	if(age >=18){
+	if(age >= 18){
 		return "true"
 	}
-	
 }
+
 console.log(canVote(19));
 
 /*
  * #2
  * Function - login
+ 
  * Create a function named `login` which will take a parameter: `password`.
  *
  *  @param Datatype: String `password`
@@ -89,12 +90,12 @@ console.log(isGreaterThan(3,2));
 */
 
 function mustBeTrue(boo){
-	if(boo === "true"){
+	if(boo === true){
 		return true;
 	}
 }
 
-console.log(mustBeTrue("true"))
+console.log(mustBeTrue(true))
 
 /*
  * #5
@@ -134,7 +135,7 @@ function isEqual(first, second){
 	if(first === second){
 		return "You look mahvelous";
 	}else{
-		return "I don't know who you are anymore."
+		return "I don't know who you are anymore.";
 	}
 }
 
@@ -174,7 +175,7 @@ console.log(notEqual("dog", "wolf"))
 */ 
 function spareChange(money){
 	if(money >100){
-		return true
+		return true;
 	}else{
 		return false;
 	}
@@ -318,15 +319,12 @@ function buyDoughnut(){
   budget -= doughnutPrice;
   doughnutBought++;
  }
+ 	return budget, doughnutBought;
 }
 
 buyDoughnut();
 console.log(budget);
 console.log(doughnutBought);
-
-
-
-
 
 
 
@@ -342,7 +340,7 @@ The for loop is made up for 3 parts:
 
 var toyotaModels = ["Corolla", "Prius", "4 Runner", "Camry", "Land Cruiser"];
 
-for (var i = 0; i<toyotaModels.length; i++){
+for(var i = 0; i<toyotaModels.length; i++){
    console.log("Toyota " + toyotaModels[i]);
 }
 
